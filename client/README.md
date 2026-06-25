@@ -8,7 +8,7 @@ Users can submit URLs from blogs, news articles, product pages, documentation we
 
 ## 🚀 Live Demo
 
-**Frontend:**link-roaster-git-main-akalyas-projects-eed1faa5.vercel.app
+**Frontend:**https://link-roaster-git-main-akalyas-projects-eed1faa5.vercel.app/
 
 **Backend API:** https://link-roaster-hxak.onrender.com/
 
