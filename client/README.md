@@ -8,51 +8,51 @@ Users can submit URLs from blogs, news articles, product pages, documentation we
 
 ## 🚀 Live Demo
 
-Frontend: YOUR_FRONTEND_URL
+**Frontend:** https://link-roaster-npe7b8kyi-akalyas-projects-eed1faa5.vercel.app/
 
-Backend API: YOUR_BACKEND_URL
+**Backend API:** https://link-roaster-hxak.onrender.com/
 
 ---
 
-## 📸 Features
+## ✨ Features
 
-### AI-Powered Website Analysis
+### 🤖 AI-Powered Website Analysis
 
-- Extracts content from any public webpage
-- Generates a concise summary using AI
-- Creates a humorous roast
-- Produces a one-line verdict
+* Extracts content from public web pages
+* Generates AI-powered summaries
+* Creates humorous roasts
+* Produces a fun one-line verdict
 
-### Recent Roasts Feed
+### 📚 Recent Roasts Feed
 
-- Stores roasts in Firestore
-- Displays latest roasts on the homepage
-- Automatically updates after every submission
+* Stores roasts in Firebase Firestore
+* Displays recent submissions on the homepage
+* Automatically updates after every roast
 
-### Smart URL Handling
+### 🔗 Smart URL Handling
 
-- URL validation
-- Invalid URL detection
-- Website-not-found handling
-- SSL/TLS error handling
-- Timeout handling
-- Scraping-blocked website detection
+* URL validation
+* Invalid URL detection
+* Website-not-found handling
+* Timeout handling
+* SSL/TLS error handling
+* Scraping-blocked website detection
 
-### Performance Optimization
+### ⚡ Performance Optimization
 
-- Duplicate URL caching
-- Prevents repeated AI generation for the same URL
-- Faster response times
-- Reduced API usage
+* Duplicate URL caching
+* Prevents repeated AI requests for the same URL
+* Faster response times
+* Reduced API usage
 
-### Modern UI
+### 🎨 Modern UI
 
-- Responsive design
-- Glassmorphism cards
-- Gradient backgrounds
-- Interactive hover effects
-- Toast notifications
-- Mobile-friendly layout
+* Responsive design
+* Glassmorphism cards
+* Gradient backgrounds
+* Interactive hover effects
+* Toast notifications
+* Mobile-friendly layout
 
 ---
 
@@ -60,53 +60,58 @@ Backend API: YOUR_BACKEND_URL
 
 ### Frontend
 
-- React
-- Vite
-- Tailwind CSS
-- Axios
-- React Icons
-- React Hot Toast
+* React
+* Vite
+* Tailwind CSS
+* Axios
+* React Icons
+
 
 ### Backend
 
-- Node.js
-- Express.js
-- Axios
-- Cheerio
+* Node.js
+* Express.js
+* Axios
+* Cheerio
 
 ### Database
 
-- Firebase Firestore
+* Firebase Firestore
 
 ### AI
 
-- OpenRouter API
+* OpenRouter API
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-Link-Roaster/
+link-roaster/
 │
-├── frontend/
-│   ├── src/
+├── client/
 │   ├── public/
+│   ├── src/
 │   └── package.json
 │
-├── backend/
+├── server/
+│   ├── config/
 │   ├── controllers/
 │   ├── routes/
 │   ├── services/
 │   ├── utils/
+│   ├── server.js
 │   └── package.json
 │
+├── .gitignore
 └── README.md
 ```
 
+---
+
 ## ⚙️ Environment Variables
 
-Create a `.env` file inside the backend folder.
+Create a `.env` file inside the `server` folder.
 
 ```env
 PORT=5000
@@ -114,8 +119,8 @@ PORT=5000
 OPENROUTER_API_KEY=your_openrouter_api_key
 
 FIREBASE_PROJECT_ID=your_project_id
-FIREBASE_PRIVATE_KEY=your_private_key
 FIREBASE_CLIENT_EMAIL=your_client_email
+FIREBASE_PRIVATE_KEY=your_private_key
 ```
 
 ---
@@ -128,8 +133,8 @@ PORT=
 OPENROUTER_API_KEY=
 
 FIREBASE_PROJECT_ID=
-FIREBASE_PRIVATE_KEY=
 FIREBASE_CLIENT_EMAIL=
+FIREBASE_PRIVATE_KEY=
 ```
 
 ---
@@ -139,7 +144,7 @@ FIREBASE_CLIENT_EMAIL=
 ### Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/link-roaster.git
+git clone https://github.com/A/link-roaster.git
 
 cd link-roaster
 ```
@@ -147,14 +152,14 @@ cd link-roaster
 ### Backend Setup
 
 ```bash
-cd backend
+cd server
 
 npm install
 
-npm run dev
+npm start
 ```
 
-Backend runs on:
+Backend runs at:
 
 ```text
 http://localhost:5000
@@ -163,14 +168,14 @@ http://localhost:5000
 ### Frontend Setup
 
 ```bash
-cd frontend
+cd client
 
 npm install
 
 npm run dev
 ```
 
-Frontend runs on:
+Frontend runs at:
 
 ```text
 http://localhost:5173
@@ -180,90 +185,104 @@ http://localhost:5173
 
 ## 🌍 Deployment
 
-### Frontend Deployment
+### Frontend Deployment (Vercel)
 
-Deploy frontend using Vercel.
-
-Build command:
-
-```bash
-npm run build
-```
-
-Output directory:
+1. Import GitHub repository into Vercel
+2. Set Root Directory:
 
 ```text
-dist
+client
 ```
 
-### Backend Deployment
+3. Add Environment Variable:
 
-Deploy backend using Render.
+```env
+VITE_API_URL=https://link-roaster-hxak.onrender.com
+```
 
-Start command:
+4. Deploy
+
+---
+
+### Backend Deployment (Render)
+
+1. Create a new Web Service
+2. Set Root Directory:
+
+```text
+server
+```
+
+3. Build Command:
+
+```bash
+npm install
+```
+
+4. Start Command:
 
 ```bash
 npm start
 ```
 
-Add all environment variables in Render dashboard before deployment.
+5. Add Environment Variables:
 
-### Firebase
+```env
+OPENROUTER_API_KEY=
+FIREBASE_PROJECT_ID=
+FIREBASE_CLIENT_EMAIL=
+FIREBASE_PRIVATE_KEY=
+```
 
-Create a Firebase project.
-
-Enable Firestore Database.
-
-Add Firebase credentials to environment variables.
+6. Deploy
 
 ---
 
-## 🧪 Example Usage
+## 🔥 Example Usage
 
-Input:
+### Input
 
 ```text
 https://react.dev
 ```
 
-Output:
+### Output
 
-```text
-Summary:
+**Summary**
+
 React is a JavaScript library for building user interfaces.
 
-Roast:
-React is like a cooking book full of confusing recipes.
+**Roast**
 
-Verdict:
+React is like a cookbook filled with recipes that everyone swears are simple until you're three hours deep debugging.
+
+**Verdict**
+
 It's a library, not a miracle worker.
-```
 
 ---
 
-## 🔒 Error Handling
+## 🛡️ Error Handling
 
 The application gracefully handles:
 
-- Invalid URLs
-- Website not found errors
-- SSL/TLS connection failures
-- Request timeouts
-- Websites blocking scraping
-- AI generation failures
+* Invalid URLs
+* Website not found errors
+* SSL/TLS failures
+* Request timeouts
+* Scraping restrictions
+* AI generation failures
+* Empty content pages
 
 ---
 
 ## 👩‍💻 Author
 
-Akalya P
+**Akalya P**
 
-Final Year Computer Science Student
 
-GitHub: https://github.com/YOUR_USERNAME
 
----
+GitHub: https://github.com/Akalya2005p
 
-## 📜 License
 
-This project was developed as part of the Bipolar Factory Full-Stack Internship Assignment.
+
